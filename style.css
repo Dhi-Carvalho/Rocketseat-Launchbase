@@ -179,11 +179,6 @@ footer div {
     visibility: hidden;
 }
 
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
 .modal {
     background-color: whitesmoke;
     width: 90%;
@@ -198,6 +193,11 @@ footer div {
     right: 10px;
     top: 10px;
     cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 iframe {
