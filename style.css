@@ -160,14 +160,6 @@ footer div {
     text-align: center;
 }
 
-.course_content p {
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
-    color: white;
-}
-
 .course_price {
     background-color: goldenrod;
     filter: brightness(90%);
@@ -175,4 +167,42 @@ footer div {
     border-radius: 20px;
     text-align: center;
     color: whitesmoke;
+}
+
+.modal-overlay {
+    background-color: rgba(113, 89, 193,0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: rgb(113, 89, 193);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
 }
